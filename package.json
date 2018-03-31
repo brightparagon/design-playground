@@ -1,0 +1,13 @@
+{
+  "name": "design-practice-css-sass",
+  "version": "1.0.0",
+  "description": "practice css and sass based on react",
+  "main": "index.js",
+  "repository": "https://github.com/brightparagon/design-practice-css-sass.git",
+  "author": "brightparagon",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0"
+  }
+}
