@@ -1,0 +1,36 @@
+body {
+  margin: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'nav nav nav nav'
+    'side-nav main main main'
+    'footer footer footer footer';
+  grid-gap: 5px;
+}
+
+.grid-container > * {
+  background-color: lightslategray;
+  text-align: center;
+  font-size: 30px;
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+
+.navigation {
+  grid-area: nav;
+}
+
+.side-navigation {
+  grid-area: side-nav;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
