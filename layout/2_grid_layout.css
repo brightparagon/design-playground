@@ -1,0 +1,14 @@
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px;
+}
+
+.container > div {
+  background: orange;
+  padding: 1em;
+}
+
+.container > div:nth-child(odd) {
+  background: darkseagreen;
+}
