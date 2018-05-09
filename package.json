@@ -1,5 +1,9 @@
 {
+  "scripts": {
+    "start": "http-server"
+  },
   "dependencies": {
+    "http-server": "^0.11.1",
     "reset-css": "^3.0.0"
   }
 }
