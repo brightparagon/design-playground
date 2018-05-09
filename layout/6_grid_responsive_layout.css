@@ -1,0 +1,98 @@
+/* desktop */
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 50px 50px 1fr 200px;
+  grid-template-areas: 
+    "navigation navigation navigation navigation navigation"
+    ". header header header ."
+    ". content content content ."
+    "footer footer footer footer footer";
+  grid-gap: 0.5em;
+}
+
+/* tablet */
+@media screen and (max-width: 736px) {
+  .container {
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 50px;
+    grid-template-rows: 70px 1fr 150px;
+    grid-template-areas: 
+      "navigation navigation header header"
+      ". content content ."
+      "footer footer footer footer";
+    grid-gap: 0.25em;
+  }
+}
+
+/* moblie */
+@media screen and (max-width: 400px) {
+  .container {
+    display: grid;
+    grid-template-columns: 20px 1fr 1fr 20px;
+    grid-template-rows: 30px 1fr 100px;
+    grid-template-areas: 
+      "navigation navigation header header"
+      ". content content ."
+      "footer footer footer footer";
+    grid-gap: 0.2em;
+  }
+}
+
+.container > div.navigation, div.header, div.footer {
+  background-color: aquamarine;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.navigation {
+  grid-area: navigation;
+}
+
+.header {
+  grid-area: header;
+}
+
+.content {
+  grid-area: content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 0.5em;
+  background-color: lightgrey;
+  padding: 0.5em;
+}
+
+@media screen and (max-width: 736px) {
+  .content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 0.5em;
+    background-color: lightgrey;
+    padding: 1em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 0.5em;
+    background-color: lightgrey;
+    padding: 1em;
+  }
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.content .box {
+  color: white;
+  background-color: blue;
+  padding: 1em;
+}
