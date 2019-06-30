@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2rem 1rem;
+}
+
+nav,
+main,
+footer {
+  width: 100%;
+}
+
+.Navigation {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #999999;
+}
+
+.Navigation .Navigation__row {
+  width: 100%;
+  height: 4rem;
+}
+
+.Navigation .Navigation__top {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 12fr 1fr 2fr;
+}
+
+.Navigation .Navigation__top .Navigation__location {
+  display: grid;
+  align-content: center;
+}
+
+.Navigation .Navigation__top .Navigation__temperature {
+  display: grid;
+  align-content: center;
+}
+
+.Navigation .Navigation__top .Navigation__cloudWrapper {
+  display: grid;
+  justify-content: start;
+  align-content: center;
+}
+
+.Navigation .Navigation__top .Navigation__cloudWrapper .Navigation__cloud {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.Navigation .Navigation__top .Navigation__loginIconWrapper {
+  display: grid;
+  justify-content: end;
+  align-content: center;
+}
+
+.Navigation
+  .Navigation__top
+  .Navigation__loginIconWrapper
+  .Navigation__loginIcon {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.Navigation .Navigation__top .Navigation__signIn {
+  display: grid;
+  align-content: center;
+  text-align: center;
+}
+
+.Navigation .Navigation__top .Navigation__center {
+  display: grid;
+  grid-template-areas: ". . . . . q . . . . . .";
+}
+
+.Navigation .Navigation__top .Navigation__center .Navigation__Q {
+  grid-area: q;
+  background-color: #1875f0;
+  color: white;
+  border-radius: 100%;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+}
+
+.Navigation .Navigation__bottom {
+  display: grid;
+  grid-template-columns: 1fr 18fr 1fr;
+  border-top: 3px solid #f5f5f5;
+  border-bottom: 3px solid #f5f5f5;
+}
+
+.Navigation .Navigation__bottom .Navigation__hamburgerWrapper {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  border-right: 3px solid #f5f5f5;
+}
+
+.Navigation
+  .Navigation__bottom
+  .Navigation__hamburgerWrapper
+  .Navigation__hamburger {
+  width: 3rem;
+  height: 3rem;
+}
+
+.Navigation .Navigation__bottom .Navigation__searchWrapper {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  border-left: 3px solid #f5f5f5;
+}
+
+.Navigation .Navigation__bottom .Navigation__searchWrapper .Navigation__search {
+  width: 2.6rem;
+  height: 2.6rem;
+}
+
+.Navigation .Navigation__bottom .Navigation__menu {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.Navigation .Navigation__bottom .Navigation__menu .Navigation__menu__items {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 2rem;
+}
+
+.CardList {
+  display: grid;
+  padding: 0 5rem;
+  margin-top: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(15rem, auto);
+  grid-gap: 1.5rem;
+  grid-auto-flow: dense;
+}
+
+.CardList .Card {
+  border-radius: 1rem;
+  border: 3px solid #868686;
+  text-align: center;
+}
+
+.CardList .Card.Card__vertical {
+  grid-row: span 2;
+}
+
+.CardList .Card.Card__horizontal {
+  grid-column: span 2;
+}
+
+.CardList .Card.Card__big {
+  grid-row: span 2;
+  grid-column: span 3;
+}
