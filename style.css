@@ -12,7 +12,7 @@
 }
 
 /* tablet */
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 786px) {
   .container {
     display: grid;
     grid-template-columns: 50px 1fr 1fr 50px;
@@ -26,7 +26,7 @@
 }
 
 /* moblie */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   .container {
     display: grid;
     grid-template-columns: 20px 1fr 1fr 20px;
@@ -63,7 +63,7 @@
   padding: 0.5em;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 786px) {
   .content {
     grid-area: content;
     display: grid;
@@ -75,7 +75,7 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   .content {
     grid-area: content;
     display: grid;
