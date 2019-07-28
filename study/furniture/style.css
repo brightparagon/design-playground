@@ -1,0 +1,10 @@
+body {
+  width: 50vw;
+  margin: 20rem auto;
+}
+
+header {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+}
